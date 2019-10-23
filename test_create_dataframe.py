@@ -24,7 +24,7 @@ def test_create_dataframe(pd_df, col_list):
     if pd_df[df_col_list[0]].count() + 1 >= 10:
         for df_col in df_col_list:
             if df_col in col_list:
-                if same_type(df_col.tolist()):
+                if same_type(df_col):
                     pass
                 else:
                     result = False
